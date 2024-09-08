@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package com.kys.bs2.transaction;
+option go_package = "./transaction";
+
+message Log {
+    string block_hash = 1;
+    string address = 2;
+    string log_index = 3;
+    string data = 4;
+    bool removed = 5;
+    repeated string topics = 6;
+    string block_number = 7;
+    string transaction_index = 8;
+    string transaction_hash = 9;
+}
+
+message TransactionReceipt {
+    string transaction_hash = 1;
+    string block_hash = 2;
+    string block_number = 3;
+    string logs_bloom = 4;
+    string l1_block_number = 5;
+    string contract_address = 6;
+    string transaction_index = 7;
+    string type = 8;
+    string gas_used = 9;
+    string cumulative_gas_used = 10;
+    string from = 11;
+    string to = 12;
+    string effective_gas_price = 13;
+    repeated Log logs = 14;
+    string status = 15;
+    string gas_used_for_l1 = 16;
+}
+
+service TransactionService {
+    rpc SubmitTransactionReceipt(TransactionReceipt) returns (SubmitResponse);
+}
+
+message SubmitResponse {
+    bool success = 1;
+}

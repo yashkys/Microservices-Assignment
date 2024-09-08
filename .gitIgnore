@@ -1,0 +1,36 @@
+goService/.env
+scalaService/com.kys.bs2/.env
+# macOS
+scalaService/com.kys.bs2/.DS_Store
+
+# sbt specific
+scalaService/com.kys.bs2/dist/*
+scalaService/com.kys.bs2/target/
+scalaService/com.kys.bs2/lib_managed/
+scalaService/com.kys.bs2/src_managed/
+scalaService/com.kys.bs2/project/boot/
+scalaService/com.kys.bs2/project/plugins/project/
+scalaService/com.kys.bs2/project/local-plugins.sbt
+scalaService/com.kys.bs2/.history
+scalaService/com.kys.bs2/.ensime
+scalaService/com.kys.bs2/.ensime_cache/
+scalaService/com.kys.bs2/.sbt-scripted/
+scalaService/com.kys.bs2/local.sbt
+
+# Bloop
+scalaService/com.kys.bs2/.bsp
+
+# VS Code
+scalaService/com.kys.bs2/.vscode/
+
+# Metals
+scalaService/com.kys.bs2/.bloop/
+scalaService/com.kys.bs2/.metals/
+scalaService/com.kys.bs2/metals.sbt
+
+# IDEA
+scalaService/com.kys.bs2/.idea
+scalaService/com.kys.bs2/.idea_modules
+scalaService/com.kys.bs2/.worksheet/
+
+scalaService/com.kys.bs2/.env
